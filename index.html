@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Fund - Donate for a Cause</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Modal basic styles */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto;
+                 background-color: rgba(0,0,0,0.5); align-items: center; justify-content: center; }
+        .modal-content { background: #fff; margin: auto; padding: 20px; border-radius: 8px; max-width: 480px; width: 90%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .modal-header { font-weight: 700; margin-bottom: 10px; }
+        .modal-body { margin-bottom: 16px; }
+        .modal-buttons { display: flex; gap: 10px; justify-content: flex-end; }
+        .btn { padding: 8px 14px; border: none; border-radius: 6px; cursor: pointer; }
+        .btn-primary { background: #2e8b57; color: #fff; }
+        .btn-secondary { background: #ddd; color: #333; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\logo.jpg" alt="Eco Fund Logo" class="logo">
+                <h1>Eco Fund</h1>
+            </div>
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#features">FEATURES</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Eco Fund</h2>
+        <p>Watch videos highlighting the destruction of nature and the efforts to restore it.</p>
+        
+        <!-- About Eco Fund Section -->
+        <h3>About Eco Fund</h3>
+        <div class="about-container">
+            <div class="about-section">
+                <h4>Our Mission</h4>
+                <p>Our mission is to accelerate global sustainability by connecting donors, investors, and projects focused on climate action, biodiversity preservation, renewable energy, and eco-friendly innovations. We believe in measurable change, ensuring every contribution directly supports verified initiatives that combat environmental challenges like deforestation, pollution, and climate change.</p>
+            </div>
+
+            <div class="about-section">
+                <h4>Key Features</h4>
+                <ul class="features-list">
+                    <li><strong>Project Discovery:</strong> Browse a curated database of vetted eco-projects worldwide, from reforestation in the Amazon to solar farm developments in Africa, complete with impact metrics and progress updates.</li>
+                    <li><strong>Investment Options:</strong> Choose from donations, green bonds, or equity stakes in sustainable ventures, with tools for tracking returns and environmental benefits.</li>
+                    <li><strong>Community Engagement:</strong> Join forums, webinars, and events to connect with like-minded individuals, share ideas, and amplify your impact.</li>
+                    <li><strong>Transparency Dashboard:</strong> Access real-time reports on fund allocation, project outcomes, and carbon offsets, backed by third-party audits for accountability.</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h4>Why Choose Eco Fund?</h4>
+                <p>With a user-friendly interface, secure transactions, and a commitment to ethical practices, Eco Fund makes it easy to turn environmental passion into action. Join thousands of users who have already funded over $50 million in projects, reducing carbon footprints and restoring ecosystems. Visit EcoFund.org today to start making a difference.</p>
+            </div>
+        </div>
+        
+        <!-- Video 1: Nature Destruction -->
+        <h3>Nature Being Destroyed</h3>
+        <video controls width="560" height="315">
+            <source src="C:\Users\DELL\Downloads\WEB_PROJ\v1.mp4" type="video/mp4">
+            <source src="nature_destruction.webm" type="video/webm">  <!-- Optional: Add WebM for better compatibility -->
+            Your browser does not support the video tag. <a href="nature_destruction.mp4">Download the video</a> instead.
+        </video>
+        <p>This video shows examples of nature destruction by human activities like mining, illegal logging, and urbanization.</p>
+        
+        <!-- Video 2: Environmental Aid -->
+        <h3>Environmental Aid Efforts</h3>
+        <video controls width="560" height="315">
+            <source src="C:\Users\DELL\Downloads\WEB_PROJ\v2.mp4" type="video/mp4">
+            <source src="environmental_aid.webm" type="video/webm">  <!-- Optional: Add WebM for better compatibility -->
+            Your browser does not support the video tag. <a href="environmental_aid.mp4">Download the video</a> instead.
+        </video>
+        <p>This video highlights positive environmental aid efforts, such as planting trees, cleaning trash, and community bayanihan.</p>
+
+        <!-- New Feature: Photo Slideshow Showing Where Donations Go -->
+        <h3>Where Your Donations Go</h3>
+        <p>See the impact of your contributions through our restoration projects around the world.</p>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\slide1.jpg" alt="Mangrove Restoration Project" style="width:100%">
+                <div class="caption">Mangrove forests restored along coastlines to protect against erosion and support marine life.</div>
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\slide2.jpg" alt="Rainforest Replanting" style="width:100%">
+                <div class="caption">Biodiversity restored in rainforests through community-led tree planting initiatives.</div>
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\slide3.jpg" alt="Grassland Habitat Support" style="width:100%">
+                <div class="caption">Wildlife habitats in grasslands preserved and expanded for endangered species.</div>
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\slide4.jpg" alt="Urban Gardening Project" style="width:100%">
+                <div class="caption">Cities greened up with community gardens, reducing pollution and improving air quality.</div>
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\slide5.jpg" alt="Desert Revegetation" style="width:100%">
+                <div class="caption">Desert areas revegetated to combat desertification and restore soil health.</div>
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\slide6.jpg" alt="Alpine Conservation" style="width:100%">
+                <div class="caption">Alpine ecosystems conserved through seed planting and habitat protection efforts.</div>
+            </div>
+            <!-- Navigation dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <h3>Donate for a Cause</h3>
+        <p>Choose the type of seeds you want to help plant to restore nature:</p>
+        <div class="donate-options">
+            <div class="option">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\magroove_seed.jpg" alt="Mangrove Seeds" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+                <h4>Mangrove Seeds</h4>
+                <p>Help protect coastlines.</p>
+                <button class="donate-btn" data-seed="Mangrove Seeds" data-price="10">Donate $10</button>
+            </div>
+            <div class="option">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\rainforest_seed.jpg" alt="Rainforest Seeds" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+                <h4>Rainforest Seeds</h4>
+                <p>Restore biodiversity.</p>
+                <button class="donate-btn" data-seed="Rainforest Seeds" data-price="15">Donate $15</button>
+            </div>
+            <div class="option">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\grassland_seed.jpg" alt="Grassland Seeds" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+                <h4>Grassland Seeds</h4>
+                <p>Support wildlife habitats.</p>
+                <button class="donate-btn" data-seed="Grassland Seeds" data-price="12">Donate $12</button>
+            </div>
+            <div class="option">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\urban_seed.jpg" alt="Urban Garden Seeds" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+                <h4>Urban Garden Seeds</h4>
+                <p>Green up cities.</p>
+                <button class="donate-btn" data-seed="Urban Garden Seeds" data-price="8">Donate $8</button>
+            </div>
+            <!-- New Seed Options -->
+            <div class="option">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\narra_seed.jpg" alt="Narra Seeds" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+                <h4>Narra Seeds</h4>
+                <p>Combat desertification.</p>
+                <button class="donate-btn" data-seed="Narra Seeds" data-price="11">Donate $11</button>
+            </div>
+            <div class="option">
+                <img src="C:\Users\DELL\Downloads\WEB_PROJ\imgs\alpine_seed.jpg" alt="Alpine Seeds" style="width:100%; height:150px; object-fit:cover; border-radius:8px;">
+                <h4>Alpine Seeds</h4>
+                <p>Preserve mountain ecosystems.</p>
+                <button class="donate-btn" data-seed="Alpine Seeds" data-price="14">Donate $14</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch for more information or to support our cause.</p>
+        <!-- Add a simple contact form if needed -->
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Follow us on social media:</p>
+        <a href="https://www.facebook.com/share/1CQbxub4jd/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a><br>
+        <a href="https://www.facebook.com/share/1CQbxub4jd/" target="_blank"><i class="fab fa-youtube"></i> Youtube</a><br>
+        <a href="https://www.facebook.com/share/1CQbxub4jd/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a><br>
+
+        <!-- Ratings Section -->
+        <div class="ratings-section">
+            <h3>What People Say About Eco Fund</h3>
+            <div class="ratings-container">
+                <div class="rating-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="rating-text">"Amazing platform! I can see exactly where my donations go. Highly recommend!"</p>
+                    <p class="rating-author">- Sarah Johnson, Environmental Advocate</p>
+                </div>
+
+                <div class="rating-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="rating-text">"Transparent, user-friendly, and truly making a difference. Best donation platform I've used."</p>
+                    <p class="rating-author">- Michael Chen, Corporate CSR Manager</p>
+                </div>
+
+                <div class="rating-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="rating-text">"Great cause and excellent impact tracking. Love supporting real environmental projects!"</p>
+                    <p class="rating-author">- Emma Rodriguez, Climate Activist</p>
+                </div>
+
+                <div class="rating-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="rating-text">"Donating to Eco Fund gives me peace of mind. The transparency and results are outstanding!"</p>
+                    <p class="rating-author">- David Kim, Philanthropist</p>
+                </div>
+
+                <div class="rating-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="rating-text">"Finally, a donation platform that actually cares about impact. 10/10 experience!"</p>
+                    <p class="rating-author">- Lisa Zhang, Conservation Officer</p>
+                </div>
+
+                <div class="rating-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="rating-text">"Impressed with the detailed project updates and real-world impact reports. Truly credible!"</p>
+                    <p class="rating-author">- James Patterson, NGO Director</p>
+                </div>
+            </div>
+
+            <!-- Overall Rating Stats -->
+            <div class="rating-stats">
+                <div class="stat">
+                    <h4>4.9 / 5.0</h4>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat">
+                    <h4>12,500+</h4>
+                    <p>User Reviews</p>
+                </div>
+                <div class="stat">
+                    <h4>98%</h4>
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+
+        <p>&copy; 2023 Eco Fund. All rights reserved.</p>
+    </footer>
+
+    <!-- Receipt Modal -->
+    <div id="receiptModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="receiptTitle">
+            <div class="modal-header" id="receiptTitle">Donation Receipt</div>
+            <div class="modal-body" id="receiptBody">
+                <!-- Filled by script: seed type, amount, where donation goes -->
+            </div>
+            <div class="modal-buttons">
+                <button id="cancelDonateBtn" class="btn btn-secondary">Cancel</button>
+                <button id="proceedDonateBtn" class="btn btn-primary">Proceed</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cancel Confirmation Modal -->
+    <div id="cancelConfirmModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="cancelTitle">
+            <div class="modal-header" id="cancelTitle">Are you sure?</div>
+            <div class="modal-body">The world needs your help, are you sure you want to cancel?.</div>
+            <div class="modal-buttons">
+                <button id="confirmCancelBtn" class="btn btn-secondary">Proceed cancelation</button>
+                <button id="confirmReturnBtn" class="btn btn-primary">Proceed donation</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>  <!-- Link to the external JavaScript file -->
+</body>
+</html>
